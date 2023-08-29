@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Booking Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Booking Appointment</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form" >
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <input class="btn" type="submit" value="Submit">
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <ul id="users"></ul>
+    </section>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
