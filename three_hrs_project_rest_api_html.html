@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Seller's Admin Page</title>
+    <link rel="stylesheet" href="three_hrs_project_rest_api_css.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Seller's Admin Page</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form" >
+        <div>
+          <label for="amount">Choose Amount:</label>
+          <input type="text" id="amount" required>
+        </div>
+        <div>
+          <label for="product_name">Choose Product Name:</label>
+          <input type="text" id="product_name" required>
+        </div>
+        <div>
+            <label for="category">Choose a Category</label>
+            <select name="category" id="category" required>
+                <!-- <option value="Choose a Category" selected>Choose a Category</option> -->
+                <option value="electronic" id="option">Electronic</option>
+                <option value="skin_care" id="option">Skin Care</option>
+                <option value="food_items" id="option">Food Items</option>
+            </select>
+        </div>
+        <input class="btn" type="submit" value="Add Product">
+
+        <h1 id="products">Products</h1>
+        <ul id="electronic">Electronic</ul>
+        <ul id="skin_care">Skin Care</ul>
+        <ul id="food_item">Food Item</ul>
+      </form>
+
+      
+    </section>
+    
+
+    <script src="three_hrs_project_rest_api.js"></script>
+  </body>
+</html>
